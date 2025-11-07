@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film to Read</title>
+  <link rel="stylesheet" href="estilos_principal.css">
+</head>
+<body>
+  <!-- cabecera -->
+  <header class="header">
+    <div class="capa_gris">
+      <div class="header_texto">
+        <h1>Film to Read</h1>
+        <p>by Luz Bietti & Diego Ciro</p>
+      </div>
+    </div>
+    <!-- menu despleglable -->
+    <button class="hamburguesa" id="hamburguesa">
+      ☰
+    </button>
+    <nav class="menu" id="menu">
+      <a href="iniciar.html">Iniciar Sesión</a>
+      <a href="#">Mis favoritos</a>
+      <a href="#">Buscar</a>
+      <a href="#">Mejor valorados</a>
+    </nav>
+  </header>
+
+  <!-- introduccion -->
+  <section class="intro">
+    <h2>Redescubre...</h2>
+    <p>
+      Film to Read es una plataforma que facilita la búsqueda de libros y películas,
+      sugiriendo títulos relacionados con el material que tú proporciones.
+      Te ofreceremos los títulos más destacados con lo que más deseas ver o leer.
+    </p>
+  </section>
+
+   <div class="h3">
+      <h3>¿Qué es lo que deseas encontrar?</h3>
+    </div>
+  <!-- opciones -->
+      <div class="flor1">
+        <img src="imagenes/flor1.png" alt="">
+    </div>
+<section class="opciones">
+    <div class="banners">
+      <div class="banner">
+        <div class="contenedor_imagen">
+         <a href="generos_libros.html"><img src="imagenes/banner1.png"></a> 
+        </div>
+        <div class="imagen_texto">
+          <a href="#">Quiero leer un libro</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="contenedor_imagen">
+          <img src="imagenes/banner2.jpg">
+        </div>
+        <div class="imagen_texto">
+          <a href="#">Quiero ver una película</a>
+        </div>
+      </div>
+    </div>
+      <div class="h3">
+      <h3>Mejor valorados</h3>
+    </div>
+    
+  <!--</section>-->
+
+ <!--<section>-->
+   <div class="mejorvalorados">
+    <div class="flor2">
+        <img src="imagenes/flor1.png" alt="">
+    </div>
+     <div class="flor3">
+        <img src="imagenes/flor1.png" alt="">
+    </div>
+        <div class="mejorvalorados2">
+            <div class="contendor_valorados">
+               <img src="" alt="">
+                <img src="" alt=""> 
+                <img src="" alt="">
+            </div>
+         </div>
+    </div>
+<!--  </section> -->
+  
+
+  <!-- pie de pagina -->
+  <footer>
+    <p>© 2025 Film to Read | Creado por Luz Bietti & Diego Ciro</p>
+    <hr>
+    <p>Nuestras redes sociales</p> 
+     <img src="imagenes/instagram.png" alt="">
+    <hr>
+   
+  </footer>
+
+  <script>
+    // interaccion del menu hamburguesa
+    const hamburger = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+    });
+  </script>
+</body>
+</html>
