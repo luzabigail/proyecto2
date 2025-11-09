@@ -1,0 +1,150 @@
+* {
+    background-color: antiquewhite;
+    font-family: "Open Sans", sans-serif;;
+}
+.hamburguesa {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #7f4c26;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.hamburguesa:hover {
+  background: #a05a44;
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  right: 1rem;
+  background-color: #a43e3e;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: column;
+  display: none;
+  z-index: 9;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.menu a:hover {
+  background: #a05a44;
+}
+
+/* Menú activo */
+.menu.menu-active {
+  display: flex;
+}
+
+.intro {
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 200px;
+    margin-left: 40px;
+}
+#buscar {
+    display: flex;
+    justify-content: center;
+    margin: 0% 10% 5% 10%;
+   
+}
+#buscarinput {
+    width: 40%;
+    padding: 20px;
+} 
+
+#buscarinput input {
+    background-color: aliceblue;
+    padding: 20px 0px 20px 10px;
+    width: 100%;
+    height: 10%; 
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+    margin: 0px;
+}
+#boton button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 50px 20px 50px;
+    cursor: pointer;
+}
+.imagen {
+   margin-left: 50px;
+   border: solid;
+   border-width: 1px;
+   width: 50%;
+   height: 40%; 
+ 
+}
+.imagen video {
+  /*  width: 100%;*/
+  max-width: 40vw; /* La imagen no será más ancha que el 50% del ancho del viewport */
+  max-height: 60vh; /* La imagen no será más alta que el 70% de la altura del viewport */
+  height: auto;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 0%;
+}
+
+#resultados {
+    font-size: 30px;
+    text-shadow: 4px 8px 7px rgba(0, 0, 0, 0.3);
+    margin-left: 40px;
+}
+
+.banners {
+    width: 30vh;
+    padding: 10px 5px 50px 5px;
+    border: solid;
+    border-width: 1px;
+}
+
+.fondo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 2rem;
+    background-color: rgba(100, 68, 37, 0.415);
+    
+}
+
+.fondo img {
+    width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3a3231;
+  color: #fff;
+  font-size: 0.9rem;
+}
+footer img {
+    width: 20px;
+    background: transparent;
+}
+
+/* @media (max-width: 768px) {
+    .imagen img {
+        align-items: center;
+    }
+} */

@@ -4,8 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos_peliculas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="titulo">
+        <p>Descubre por generos...</p>
+    </div>
+     <!-- menu despleglable -->
+    <button class="hamburguesa" id="hamburguesa">
+      ☰
+    </button>
+    <nav class="menu" id="menu">
+      <a href="iniciar.html">Iniciar Sesión</a>
+      <a href="#">Mis favoritos</a>
+      <a href="sinopsis.html">Buscar</a>
+      <a href="#">Mejor valorados</a>
+    </nav>
+    <section>
+        <div class="generos">
+            <div class="cuadrado">
+                <img src="imagenes/orgullo-y-prejuicio-pelicula.avif" alt="">
+                <p>Romance</p>
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/monstruo.jpg" alt="">
+                 <p>Drama</p>
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/dune.webp" alt="">
+                 <p>Fantasia</p>
+        </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="generos">
+            <div class="cuadrado">
+                <img src="imagenes/orgullo-y-prejuicio-pelicula.avif" alt="">
+                <p>Romance</p>
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/monstruo.jpg" alt="">
+                 <p>Drama</p>
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/dune.webp" alt="">
+                 <p>Fantasia</p>
+        </div>
+         <!--   <div class="cuadrado">
+                <img src="imagenes/monstruo.jpg" alt="">
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/monstruo.jpg" alt="">
+            </div>
+            <div class="cuadrado">
+                <img src="imagenes/monstruo.jpg" alt="">-->
+            </div>
+        </div>
+    </section>
+    </section>
+      <section>
+        <div><p class="titulos_libros">Romance</p></div>
+        <div class="banners">
+            <div class="banner1">
+                <img src="imagenes/bajo_estrella.png" alt="">
+                <div class="descripcion">Pelicula - 2014</div>
+                <div class="descripcion">Bajo la misma estrella</div>
+                <div class="descripcion">Josh Boone</div>
+            </div>
+            <div class="banner1">
+                <img src="imagenes/mapa_anhelos.jpg" alt="">
+                <div class="descripcion">Novela - 2022</div>
+                <div class="descripcion">El mapa de los anhelos</h2></div>
+                <div class="descripcion">Alice Kellen</div>
+                
+            </div>
+        </div>
+    </section>
+      <section>
+        <div class="banners">
+         <!--   <div class="peli_libro">
+                <p>Pelicula referenciada</p>
+            </div>-->
+            <div class="banner1">
+                <img src="imagenes/yo_antes_ti.jpg" alt="">
+                <div class="descripcion">Pelicula - 2014</div>
+                <div class="titulo_obra">Bajo la misma estrella</div>
+                <div class="descripcion">Josh Boone</div>
+            </div>
+            <div class="banner1">
+                <img src="imagenes/la_chica.jpg" alt="">
+                <div class="descripcion">Novela - 2022</div>
+                <div class="titulo_obra">El mapa de los anhelos</h2></div>
+                <div class="descripcion">Alice Kellen</div>
+                <div class="vermas"><a href="vermas.html"><img src="imagenes/bookmark-removebg-preview.png" alt="">Ver más</a></div>
+            </div>
+        </div>
+    </section>
+    </section>
+      <section>
+        <!-- <div class="peli_libro">
+                <p>Pelicula referenciada</p>
+            </div> -->
+        <div class="banners">
+            <div class="banner1">
+                <img src="imagenes/orgullo_prejuicio.jpg" alt="">
+                <div class="descripcion">Pelicula - 2014</div>
+                <div class="titulo_obra">Bajo la misma estrella</div>
+                <div class="descripcion">Josh Boone</div>
+            </div>
+            <div class="banner1">
+                <img src="imagenes/bridegrton.gif" alt="">
+                <div class="descripcion">Novela - 2022</div>
+                <div class="titulo_obra">El mapa de los anhelos</h2></div>
+                <div class="descripcion">Alice Kellen</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="footercontenedor">
+    <div class="footerlogo">
+      <img src="imagenes/diseno-de-logo.png" alt="Logo by Diego Ciro & Luz Bietti" class="logo" />
+      <p class="nosotros">BY DIEGO<br>CIRO &<br>LUZ BIETTI</p>
+    </div>
+
+    <div class="footerseccion">
+      <p>IES Tetuán de las victorias<br>
+        Tel 999 999 999<br>
+        <a>email@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footerbottom">
+    <div class="social">
+      <p>Redes Sociales</p>
+      <div class="iconos">
+        <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="imagenes/linkedin.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script>
+    // interaccion del menu hamburguesa
+    const hamburger = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+    });
+  </script>
+
 </body>
 </html>

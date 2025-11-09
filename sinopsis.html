@@ -3,21 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscar</title>
+    <link rel="stylesheet" href="estilos_sinopsis.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-   <section>
+   <header>
         <div>
-            <p>Busque la pelicula la cual desea buscar un 
+            <p class="intro">Busque la pelicula la cual desea buscar un 
                 libro que se asemeje y le econtraremos uno
                 cuya trama sea similar...</p>
         </div>
         <div id="buscar">
-            <input type="text" placeholder="Introducir película">
-            <button> Buscar </button>
-            <img src="imagenes/foto_buscar.png" alt="">
+            <div id="buscarinput"><input type="text" placeholder="Introducir película">
+            </div>
+             <div id="boton"><button> Buscar </button></div> 
+            <div class="imagen"><video autoplay muted loop src="imagenes/video.mp4" alt=""></div>
         </div>
-    <div></div>
+         <!-- menu despleglable -->
+        <button class="hamburguesa" id="hamburguesa">
+        ☰
+        </button>
+        <nav class="menu" id="menu">
+        <a href="iniciar.html">Iniciar Sesión</a>
+        <a href="#">Mis favoritos</a>
+        <a href="index.html">Menú principal</a>
+        <a href="#">Mejor valorados</a>
+        </nav>
+    </header>
+    
+    <div><p id="resultados">Resultados...</p></div>
+    <section>
+        <div>
+            <div><img src="" alt=""></div>
+
+        </div>
+    </section>
+    <section class="fondobanners">
+        <div class="fondo">
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+        </div>
+    </section>
+    <section>
+        <div class="fondo">
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+            <div class="banners"><img src="imagenes/yo_antes_ti.jpg" alt=""></div>
+        </div>
    </section>
+<section></section>
+<footer>
+
+</footer>
+  <script>
+    // interaccion del menu hamburguesa
+    const hamburger = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+    });
+  </script>
 </body>
 </html>

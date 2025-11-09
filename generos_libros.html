@@ -13,6 +13,16 @@
     <div id="titulo">
         <p>Descubre por generos...</p>
     </div>
+     <!-- menu despleglable -->
+    <button class="hamburguesa" id="hamburguesa">
+      ☰
+    </button>
+    <nav class="menu" id="menu">
+      <a href="iniciar.html">Iniciar Sesión</a>
+      <a href="#">Mis favoritos</a>
+      <a href="sinopsis.html">Buscar</a>
+      <a href="#">Mejor valorados</a>
+    </nav>
     <section>
         <div class="generos">
             <div class="cuadrado">
@@ -90,6 +100,7 @@
                 <div class="descripcion">Novela - 2022</div>
                 <div class="titulo_obra">El mapa de los anhelos</h2></div>
                 <div class="descripcion">Alice Kellen</div>
+                <div class="vermas"><a href="vermas.html"><img src="imagenes/bookmark-removebg-preview.png" alt="">Ver más</a></div>
             </div>
         </div>
     </section>
@@ -113,15 +124,42 @@
             </div>
         </div>
     </section>
-    <footer>
-    <p>© 2025 Film to Read | Creado por Luz Bietti & Diego Ciro</p>
-    <hr>
-    <p>Nuestras redes sociales</p> 
-     <img src="imagenes/instagram.png" alt="">
-     <img src="imagenes/linkedin.png" alt="">
-     <img src="imagenes/facebook.png" alt="">
-    <hr>
-   
-  </footer>
+ <footer class="footer">
+  <div class="footercontenedor">
+    <div class="footerlogo">
+      <img src="imagenes/diseno-de-logo.png" alt="Logo by Diego Ciro & Luz Bietti" class="logo" />
+      <p class="nosotros">BY DIEGO<br>CIRO &<br>LUZ BIETTI</p>
+    </div>
+
+    <div class="footerseccion">
+      <p>IES Tetuán de las victorias<br>
+        Tel 999 999 999<br>
+        <a>email@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footerbottom">
+    <div class="social">
+      <p>Redes Sociales</p>
+      <div class="iconos">
+        <a href="#"><img src="imagenes/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="imagenes/linkedin.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // interaccion del menu hamburguesa
+    const hamburger = document.getElementById('hamburguesa');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('menu-active');
+    });
+  </script>
+
 </body>
 </html>

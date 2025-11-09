@@ -16,6 +16,20 @@ body {
     justify-content: center;
 }
 
+#volvermenu {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: rgb(88, 15, 15);
+    border-radius: 20px;
+    width: 50px;
+    right: 100px;
+}
+#volvermenu img {
+    width: 100%;
+}
+
 .grid {
     display: flex;
     background-color: rgba(39, 58, 38, 0.575);
@@ -92,8 +106,6 @@ p {
 }
 
 #boton {
-   /* display: grid;
-    grid-template-columns: auto auto auto;*/
     box-shadow: 4px 8px 7px rgba(0, 0, 0, 0.6);
     background-color: rgb(198, 133, 133);
     border: none;
@@ -133,9 +145,8 @@ p {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .fondo_verde {
-         min-width: 200px;
-
-    }
+.no a {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
 }
