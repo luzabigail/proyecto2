@@ -1,7 +1,13 @@
 * {
-    background-color: antiquewhite;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
 }
+
+body {
+  background-color: antiquewhite;
+}
+
 .hamburguesa {
   position: fixed;
   top: 1rem;
@@ -107,11 +113,14 @@
     font-size: 30px;
     text-shadow: 4px 8px 7px rgba(0, 0, 0, 0.3);
     margin-left: 40px;
+    padding: 30px;
+    color: #4e2c12;
 }
 
 .banners {
+    background-color: antiquewhite;
     width: 30vh;
-    padding: 10px 5px 50px 5px;
+    padding: 10px 5px 10px 5px;
     border: solid;
     border-width: 1px;
 }
@@ -131,7 +140,109 @@
     width: 100%;
 }
 
-footer {
+
+.final {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.final img {
+    width: 40%;
+}
+
+
+
+
+.footer {
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  padding: 40px 80px 0;
+  font-size: 16px;
+}
+
+.footercontenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #888;
+  padding-bottom: 30px;
+}
+
+.footerlogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.nosotros {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+.footerseccion {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footerseccion h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footerseccion p {
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+.footerseccion a {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.footerseccion a:hover {
+  text-decoration: underline;
+}
+
+.footerbottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social p {
+  margin: 0;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.iconos a img {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+  transition: opacity 0.3s;
+}
+
+
+
+/* footer {
   text-align: center;
   padding: 1rem;
   background-color: #3a3231;
@@ -141,7 +252,7 @@ footer {
 footer img {
     width: 20px;
     background: transparent;
-}
+} */
 
 /* @media (max-width: 768px) {
     .imagen img {

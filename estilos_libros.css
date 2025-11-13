@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e1bbbb;
+  background-color: #f3d8d8;
 }
 
 .hamburguesa {
@@ -107,28 +107,64 @@ body {
     padding-bottom: 50px;
 }
 
+
+.vermas {
+  width: 50vw;
+  position: relative;
+  z-index: -1;
+  background-color: rgb(135, 42, 42);
+  z-index: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 3rem; */
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+
+
 .banners {
-    background-color: rgba(139, 110, 110, 0.567);
+    position: relative;
+    z-index: -10;
+    background-color: rgba(174, 137, 137, 0.345);
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin-bottom: 30px;
     margin-left: 70px;
     margin-right: 70px;
 }
 .banner1 {
+    position: relative;
+    z-index: 7;
     background-color: antiquewhite;
     padding: 10px 10px 30px;
-    width: 40vh;
+    width: 100%;
     border-style: solid;
     border-width: 1px;
     border-left: 20px;
 }
+
+.florsinfondo {
+  max-width: 20%;
+  min-width: 20%;
+  padding: 0%;
+  margin: 0%;
+  width: 40%;
+}
+
+.florsinfondo img {
+  width:100%;
+}
+
+
 .peli_libro {
     display: flex;
-    background-color: red;
 }
 .banner1 img {
     width: 100%;
@@ -140,35 +176,7 @@ body {
     font-size: 20px;
     background-color: antiquewhite;
 }
-.ver_mas {
-    position: relative;
-    z-index: 2;
-    /*top: -400px;
-    left: 600px;*/
-    width: 90px;
-    background-color: transparent;
-    opacity: 0.7;
-}
 
-.vermas {
-  position: absolute;
-  right: 200px;              /* Lo saca un poco del contenedor */
-  top: 120px;
-  width: 15%;
-  /*transform: translateY(-30%);*/
-  color: #fff;
-  padding: 12px 25px;
-  font-weight: bold;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 10;   
-  background-color: transparent;       
-}
-
-.vermas {
-    background-color: transparent;
-}
 
 .footer {
   background-color: #2d2d2d;

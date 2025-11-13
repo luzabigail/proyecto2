@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth; /* Activa el desplazamiento suave */
+    }
 
 body {
   font-family: "Georgia", serif;
@@ -12,7 +15,6 @@ body {
 }
 
 .header {
-  position: relative;
   background-image: url('imagenes/header.png');
   background-size: cover;
   background-position: center;
@@ -109,18 +111,11 @@ body {
 }
 
  .opciones {
-  /* position: relative;
-  top: -320px; 
-  z-index: 4; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0rem 1rem;
- /*background-color: #e8d6c5;*/
-  /* height: 300px;
-  min-height: 800px; */
-  
 }
 
 .h3 {
@@ -137,112 +132,13 @@ body {
 
 }
 
-.flor1 {
-  position: relative;
-  top: -100px;
-  z-index: 7;
-  right: -20px;
-  width: 0px;
-}
-
-.flor1 img {
-  width: 300px;
-}
-/*
-.flor2 {
-  position: relative;
-  top: -500px;
-  left: 700px;
-  z-index: -1;
-  width: 0px;
-}*/
-
-/* .flor2 {
-  position: absolute;
-  top: -100px;
-  left: 700px;
-  z-index: -1;
-  width: 0px;
-}
-
-.flor2 img {
-  width: 300px;
-} */
-
-.flor3 {
-  position: relative;
-  top: -80px;
-  left: 50px;
-  z-index: 0;
-  width: 20px;
-} 
-
-.flor3 img {
-  width: 250px;
-}
-
-/*.flor1 img {
-  position: absolute;
-  top: 600px;
-  z-index: 2;
-  right: 900px;
-  width: 250px;
-}*/
-
-.flor4 {
-  /* position: relative;
-  top: -200px; */
-  /* z-index: -6;
-  left: 300px;
-  z-index: 0;
-  width: 200px; */
-} 
-
-.flor4 img {
-    position: relative;
-  top: -200px;
-  width: 250px;
-  left: 300px;
-}
-
-
-.flor1 img {
-  animation: girar 18s linear infinite; /* Nombre, duración, tipo, repetición */
-  display: inline-block;
-}
-.flor2 img {
-  animation: girar 18s linear infinite; /* Nombre, duración, tipo, repetición */
-  display: inline-block;
-}
-.flor3 img {
-  animation: girar 18s linear infinite; /* Nombre, duración, tipo, repetición */
-  display: inline-block;
-}
-
 .banners {
- /* position: absolute;
-  top: -5px; 
-  z-index: 4;
- width: 100%; */
- 
-  /*top: -260px;*/
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
   padding: 5%;
 }
-
-/*.banners {
-  position: absolute;
-  top: 650px;
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  
-}*/
 
 .ornamentos {
   width: 150px;
@@ -277,25 +173,17 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-/*.mejorvalorados {
-  text-align: center;
-  background-color: #e8d6c5;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding-bottom: 10%;
-}*/
+
 .mejorvalorados2 {
-    /* position: relative;
-    top: -120px; */
+    flex-wrap: wrap;
     display: flex;
-    z-index: 6;
     justify-content: center;
     gap: 2rem;
     margin: 0%;
     margin-left: 0%;
     margin-right: 0%;
     background-color: #7a1b1b79;
-    padding: 20px;
+    padding: 5%;
 }
 
 .usuarios {
@@ -308,15 +196,23 @@ body {
 
 
 .fotosvalorados {
-  max-width: 15%;
-  min-width: 20%;
-  padding: 5px 5px 10px 5px;
+/* 
+  width: 300px; 
+  height: 400px; */
+  max-width: 5%;
+  min-width: 30%;
+  padding: 5px 5px 5px 5px;
   background-color: rgb(245, 239, 212);
+  cursor: pointer;
 }
 
 .fotosvalorados img {
   width: 100%;
+  height:70%; 
+   object-fit: cover; /* mantiene proporción y llena el contenedor */
+  display: block;
 }
+
 
 .descvalorados {
   font-size: 1rem;
@@ -424,10 +320,10 @@ body {
 
 
 /* responsive */
-@media (max-width: 768px) {
-  /*.he h1 {
+/* @media (max-width: 768px) {
+  .he h1 {
     font-size: 2rem;
-  }*/
+  }
   .banners {
     flex-direction: column;
     align-items: center;
@@ -437,7 +333,7 @@ body {
     width: 80%;
     right: 10%;
   }
-}
+} */
 @keyframes girar {
   from {
     transform: rotate(0deg); /* Punto de inicio */
