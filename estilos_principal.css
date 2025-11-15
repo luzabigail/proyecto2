@@ -328,9 +328,6 @@ body {
 
 /* responsive */
  @media (max-width: 768px) {
-  .he h1 {
-    font-size: 2rem;
-  }
   .banners {
     flex-direction: column;
     align-items: center;
