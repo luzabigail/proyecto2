@@ -56,7 +56,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   z-index: 10;
-/*  transition: background 0.3s ease;*/
+
 }
 
 .hamburguesa:hover {
@@ -80,7 +80,7 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.5rem;
-  transition: background 0.3s ease;
+  
 }
 
 .menu a:hover {
@@ -154,6 +154,7 @@ body {
    
 }
 
+/* transcion para la caja */
 .banner:hover {
   transform: translateY(-5px);
 }
@@ -198,17 +199,9 @@ body {
 .fotosvalorados {
   background-color: #dfceb7;
   width: 200px; 
-  /* min-width: 12%;
-  max-width: 4%; */
-  /* height: 300px; */
-  /* max-width: 5%;
-  min-width: 25%; */
-  /* 
-  background-color: rgb(245, 239, 212); */
   cursor: pointer;
- padding: 5px 5px 5px 5px;
- /* margin-left: 5%;
- margin-right: 5%; */
+  padding: 5px 5px 5px 5px;
+
 }
 
 .fotosvalorados img {
@@ -325,9 +318,7 @@ body {
   transition: opacity 0.3s;
 }
 
-
-/* responsive */
- @media (max-width: 768px) {
+@media (max-width: 767px) {
   .banners {
     flex-direction: column;
     align-items: center;
@@ -337,8 +328,20 @@ body {
     width: 80%;
     right: 10%;
   }
+  .footercontenedor {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-} 
+  .ornamentos {
+    width: 100px;
+  }
+
+  .final img {
+    width: 60%;
+  }
+}
+
 @keyframes girar {
   from {
     transform: rotate(0deg); /* Punto de inicio */
