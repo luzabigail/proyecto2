@@ -149,9 +149,9 @@ body {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
- overflow: hidden;
+  overflow: hidden;
   max-width: 300px;
-  transition: transform 0.3s ease;
+   
 }
 
 .banner:hover {
@@ -178,12 +178,12 @@ body {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0%;
     margin-left: 0%;
     margin-right: 0%;
     background-color: #7a1b1b79;
-    padding: 5%;
+    padding: 5%; 
 }
 
 .usuarios {
@@ -196,26 +196,33 @@ body {
 
 
 .fotosvalorados {
-/* 
-  width: 300px; 
-  height: 400px; */
-  max-width: 5%;
-  min-width: 30%;
-  padding: 5px 5px 5px 5px;
-  background-color: rgb(245, 239, 212);
+  background-color: #dfceb7;
+  width: 200px; 
+  /* min-width: 12%;
+  max-width: 4%; */
+  /* height: 300px; */
+  /* max-width: 5%;
+  min-width: 25%; */
+  /* 
+  background-color: rgb(245, 239, 212); */
   cursor: pointer;
+ padding: 5px 5px 5px 5px;
+ /* margin-left: 5%;
+ margin-right: 5%; */
 }
 
 .fotosvalorados img {
   width: 100%;
-  height:70%; 
-   object-fit: cover; /* mantiene proporción y llena el contenedor */
+  height: auto;
+  object-fit: cover; /* mantiene proporción y llena el contenedor */
   display: block;
 }
 
-
 .descvalorados {
+  padding-top: 5%;
   font-size: 1rem;
+  text-align: center;
+ 
 }
 .sinop {
   padding-top: 5px;
@@ -320,7 +327,7 @@ body {
 
 
 /* responsive */
-/* @media (max-width: 768px) {
+ @media (max-width: 768px) {
   .he h1 {
     font-size: 2rem;
   }
@@ -333,7 +340,8 @@ body {
     width: 80%;
     right: 10%;
   }
-} */
+
+} 
 @keyframes girar {
   from {
     transform: rotate(0deg); /* Punto de inicio */

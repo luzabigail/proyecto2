@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #9e8460;
+    background-color: #f3d8d8;
 }
 
 .hamburguesa {
@@ -57,96 +57,35 @@ body {
 }
 
 
-#titulo {
-    margin: 40px;
-    padding: 10px;
-    font-size: 40px;
-}
-
-.generos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-}
-
-.cuadrado {
-  box-shadow: 3px 8px 7px rgba(0, 0, 0, 0.1);
-  background-color: #f1f1f1;
-  height: 200px;
-  width: 300px;
-  margin: 10px;
-  border-style: solid;
-  border-width: 1px;
- /* padding: 0px 0px 10px;*/
-  text-align: center;  
-  font-size: 30px;
-  padding-bottom: 50px;
-
-}
-.cuadrado p {
-    background-color: #f1f1f1;
-}
-.cuadrado:hover {
-  transform: scale(1.05);
-}
-
-.enlaces {
-  text-decoration: none;
-  color: #775555;
-}
-
-/*.texto {
-    background-color: #f1f1f1;
-    border: none;
-    margin-top: 0%;
-}*/
-.cuadrado img {
-    width: 100%;
-   height: 100%;
-}
-
 .titulos_libros {
     font-size: 50px;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 20px;
+    color: rgb(105, 58, 58);
 }
 
-
-.vermas {
-  width: 50vw;
-  position: relative;
-  background-color: rgb(135, 42, 42);
-  z-index: 0;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 3rem; */
-  margin-bottom: 30px;
-  margin-left: 70px;
-  margin-right: 70px;
+.seccion_banners {
+   display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .banners {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(174, 137, 137, 0.345);
+    /* position: relative;
+    z-index: 1; */
+    background-color: rgba(174, 137, 137, 0.33);
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 3rem; */
     margin-bottom: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    /* margin-left: 70px;
+    margin-right: 70px; */
+    width: 50vw;
 }
 .banner1 {
-    position: relative;
-    z-index: 0;
+    /* position: relative;
+    z-index: 0; */
     background-color: antiquewhite;
     padding: 10px 10px 30px;
     width: 100%;
@@ -155,21 +94,34 @@ body {
     border-left: 20px;
 }
 
+.florsinfondo {
+  max-width: 20%;
+  min-width: 20%;
+  padding: 0%;
+  margin: 0%;
+  width: 40%;
+}
+
+.florsinfondo img {
+  width:100%;
+}
 
 
-/* .peli_libro {
+.peli_libro {
     display: flex;
 }
 .banner1 img {
     width: 100%;
 }
 .descripcion {
+     padding-top: 5%;
     background-color: antiquewhite;
+    line-height: 30px;
 }
 .titulo_obra {
-    font-size: 20px;
+    font-size: 30px;
     background-color: antiquewhite;
-} */
+}
 
 
 .footer {
@@ -255,6 +207,6 @@ body {
   width: 25px;
   height: 25px;
   filter: invert(1);
+  transition: opacity 0.3s;
 }
-
 

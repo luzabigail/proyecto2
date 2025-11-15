@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="titulo">
-        <p>Descubre por generos...</p>
+        <p>Descubre por géneros...</p>
     </div>
      <!-- menu despleglable -->
     <button class="hamburguesa" id="hamburguesa">
@@ -19,112 +19,60 @@
     </button>
     <nav class="menu" id="menu">
       <a href="iniciar.html">Iniciar Sesión</a>
-      <a href="#">Mis favoritos</a>
+      <a href="guardados.html">Mis favoritos</a>
       <a href="sinopsis.html">Buscar</a>
-      <a href="#">Mejor valorados</a>
+      <a href="index.html#mejor_valorados">Mejor valorados</a>
+      <a href="index.html">Menú principal</a>
     </nav>
     <section>
         <div class="generos">
-            <div class="cuadrado">
-                <img src="imagenes/orgullo-y-prejuicio-pelicula.avif" alt="">
+          <a class="enlaces" href="romance.html">
+                <div class="cuadrado">
+                <img src="imagenes/orgulloyprejuicio.jpg" alt="">
                 <p>Romance</p>
             </div>
+            </a> 
+            <a class="enlaces" href="romance.html">
             <div class="cuadrado">
-                <img src="imagenes/monstruo.jpg" alt="">
+                <img src="imagenes/La lista de Schindler 11.jpg" alt="">
                  <p>Drama</p>
             </div>
+            </a>
+            <a class="enlaces" href="romance.html">
             <div class="cuadrado">
-                <img src="imagenes/dune.webp" alt="">
+                <img src="imagenes/smaug.jpg" alt="">
                  <p>Fantasia</p>
         </div>
+        </a>
             </div>
         </div>
     </section>
     <section>
         <div class="generos">
+          <a class="enlaces" href="romance.html">
             <div class="cuadrado">
-                <img src="imagenes/orgullo-y-prejuicio-pelicula.avif" alt="">
-                <p>Romance</p>
+                <img src="imagenes/guerra.jpg" alt="">
+                <p>Bélica</p>
             </div>
+            </a>
+            <a class="enlaces" href="romance.html">
             <div class="cuadrado">
-                <img src="imagenes/monstruo.jpg" alt="">
-                 <p>Drama</p>
+                <img src="imagenes/penny.jpg" alt="">
+                 <p>Terror</p>
             </div>
+            </a>
+            <a class="enlaces" href="romance.html">
             <div class="cuadrado">
                 <img src="imagenes/dune.webp" alt="">
-                 <p>Fantasia</p>
+                 <p>Ciencia Ficción</p>
         </div>
-         <!--   <div class="cuadrado">
-                <img src="imagenes/monstruo.jpg" alt="">
-            </div>
-            <div class="cuadrado">
-                <img src="imagenes/monstruo.jpg" alt="">
-            </div>
-            <div class="cuadrado">
-                <img src="imagenes/monstruo.jpg" alt="">-->
+        </a>
             </div>
         </div>
     </section>
     </section>
-      <section>
-        <div><p class="titulos_libros">Romance</p></div>
-        <div class="banners">
-            <div class="banner1">
-                <img src="imagenes/bajo_estrella.png" alt="">
-                <div class="descripcion">Pelicula - 2014</div>
-                <div class="descripcion">Bajo la misma estrella</div>
-                <div class="descripcion">Josh Boone</div>
-            </div>
-            <div class="banner1">
-                <img src="imagenes/mapa_anhelos.jpg" alt="">
-                <div class="descripcion">Novela - 2022</div>
-                <div class="descripcion">El mapa de los anhelos</h2></div>
-                <div class="descripcion">Alice Kellen</div>
-                
-            </div>
-        </div>
-    </section>
-      <section>
-        <div class="banners">
-         <!--   <div class="peli_libro">
-                <p>Pelicula referenciada</p>
-            </div>-->
-            <div class="banner1">
-                <img src="imagenes/yo_antes_ti.jpg" alt="">
-                <div class="descripcion">Pelicula - 2014</div>
-                <div class="titulo_obra">Bajo la misma estrella</div>
-                <div class="descripcion">Josh Boone</div>
-            </div>
-            <div class="banner1">
-                <img src="imagenes/la_chica.jpg" alt="">
-                <div class="descripcion">Novela - 2022</div>
-                <div class="titulo_obra">El mapa de los anhelos</h2></div>
-                <div class="descripcion">Alice Kellen</div>
-                <div class="vermas"><a href="vermas.html"><img src="imagenes/bookmark-removebg-preview.png" alt="">Ver más</a></div>
-            </div>
-        </div>
-    </section>
-    </section>
-      <section>
-        <!-- <div class="peli_libro">
-                <p>Pelicula referenciada</p>
-            </div> -->
-        <div class="banners">
-            <div class="banner1">
-                <img src="imagenes/orgullo_prejuicio.jpg" alt="">
-                <div class="descripcion">Pelicula - 2014</div>
-                <div class="titulo_obra">Bajo la misma estrella</div>
-                <div class="descripcion">Josh Boone</div>
-            </div>
-            <div class="banner1">
-                <img src="imagenes/bridegrton.gif" alt="">
-                <div class="descripcion">Novela - 2022</div>
-                <div class="titulo_obra">El mapa de los anhelos</h2></div>
-                <div class="descripcion">Alice Kellen</div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
+      
+ <footer class="footer">
   <div class="footercontenedor">
     <div class="footerlogo">
       <img src="imagenes/diseno-de-logo.png" alt="Logo by Diego Ciro & Luz Bietti" class="logo" />
@@ -150,6 +98,7 @@
     </div>
   </div>
 </footer>
+
   <script>
     // interaccion del menu hamburguesa
     const hamburger = document.getElementById('hamburguesa');
